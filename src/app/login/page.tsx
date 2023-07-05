@@ -4,7 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import axios from "axios";
-import { toast } from "react-hot-toast";
+import { Toaster, toast } from "react-hot-toast";
 
 export default function Login() {
   const router = useRouter();
@@ -67,6 +67,7 @@ export default function Login() {
         Login
       </button>
       <Link href="/signup">Need an account, Signup</Link>
+      <Toaster />
     </div>
   );
 }
