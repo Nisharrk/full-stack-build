@@ -55,6 +55,7 @@ export default function SignUp() {
         value={user.username}
         onChange={(e) => setUser({ ...user, username: e.target.value })}
         placeholder="username"
+        required
       />
       <label htmlFor="email">Email</label>
       <input
@@ -64,6 +65,7 @@ export default function SignUp() {
         value={user.email}
         onChange={(e) => setUser({ ...user, email: e.target.value })}
         placeholder="email"
+        required
       />
       <label htmlFor="password">password</label>
       <input
@@ -73,6 +75,7 @@ export default function SignUp() {
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         placeholder="password"
+        required
       />
       <button
         className="px-4 py-2 border border-gray-300 rounded-lg mb-4 focus:outline-none"
